@@ -1,0 +1,14 @@
+
+<div class="header">
+  <div>Invitations List</div>
+  <mat-icon (click)="logout()">logout</mat-icon>
+</div>
+<mat-list role="list" *ngIf="invitationsData.length > 0">
+  <mat-list-item  role="listitem" *ngFor="let item of invitationsData">
+    <div [ngClass]="{'readstatus': item?.status == 'read'}" matLine><b>{{item && item.sender_id ? item.sender_id:'None'}}</b></div>
+    <div matLine [innerHTML]="item && item.invite ? item.invite : 'None'"></div>
+  </mat-list-item>
+</mat-list>
+<div class="no-found" *ngIf="invitationsData.length < 1">
+  No Found Data.
+</div>

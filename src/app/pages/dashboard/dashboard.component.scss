@@ -1,0 +1,32 @@
+.mat-list-item {
+  border-bottom: 1px solid #00000014;
+  padding: 0 14px !important;
+  div {
+    margin-bottom: 5px;
+  }
+  .readstatus {
+    color: green;
+  }
+}
+.div:empty {
+  visibility: hidden;
+}
+.mat-list-item:empty {
+  visibility: hidden;
+}
+.header {
+  text-align: end;
+  padding: 20px 30px;
+  display: flex;
+  justify-content: space-between;
+  div {
+    font-size: 18px;
+    font-weight: 200;
+  }
+  .mat-icon {
+    cursor: pointer;
+  }
+}
+.no-found {
+  text-align: center;
+}
